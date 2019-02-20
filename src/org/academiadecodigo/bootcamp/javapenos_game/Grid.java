@@ -1,4 +1,6 @@
-package src.org.academiadecodigo.bootcamp.javapenos_game.grid;
+package org.academiadecodigo.bootcamp.javapenos_game;
+
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Grid {
 
@@ -13,13 +15,13 @@ public class Grid {
 
      public void init() {
           Rectangle grid = new Rectangle (PADDING, PADDING, getWidth(), getHeight());
-          grid.draw;
+          grid.draw();
      }
 
      // definir imagem de background para a Grid; -> inicia logo com a de start e depois de carregar em start muda
 
-     public GridPosition makeGridPosition(int x, int y) {
-         return //retornar uma grip position com (x, y, this grid)
+     public Position makeGridPosition(int x, int y) {
+         return null;//retornar uma grip position com (x, y, this grid)
      }
 
 
