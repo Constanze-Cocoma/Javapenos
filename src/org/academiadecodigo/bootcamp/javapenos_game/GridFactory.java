@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.javapenos_game.grid;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 public class GridFactory {
 
@@ -22,6 +22,7 @@ public class GridFactory {
             case END:
                 return new EndGrid(width, height);
         }
+        return null; // check return
 
     }
 

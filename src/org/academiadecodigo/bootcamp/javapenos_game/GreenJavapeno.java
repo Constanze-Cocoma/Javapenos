@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.javapenos_game.javapenos;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 
 public class GreenJavapeno extends Javapeno {

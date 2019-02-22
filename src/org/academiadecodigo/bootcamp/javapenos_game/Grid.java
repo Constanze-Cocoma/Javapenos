@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.javapenos_game.grid;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 public interface Grid {
 
@@ -26,7 +26,7 @@ public interface Grid {
      *
      * @return the new grid position
      */
-    public GridPosition makeGridPosition();
+    //public GridPosition makeGridPosition();
 
     /**
      * Creates a a grid position in a specific x and y
@@ -35,6 +35,6 @@ public interface Grid {
      * @param y   the position in y axis
      * @return the new grid position
      */
-    public GridPosition makeGridPosition(int x, int y);
+    //public GridPosition makeGridPosition(int x, int y);
 
 }

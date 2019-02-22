@@ -1,6 +1,5 @@
-package org.academiadecodigo.bootcamp.javapenos_game;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
-import org.academiadecodigo.bootcamp.javapenos_game.grid.StartGrid;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Position {
@@ -16,7 +15,7 @@ public class Position {
         this.startGrid = startGrid;
         this.x = x;
         this.y = y;
-        this.rectangle = new Rectangle(x, y, JAVASIZE, JAVASIZE);
+        this.rectangle = new Rectangle(x, y, 60, 80);
         show();
     }
 
@@ -32,7 +31,7 @@ public class Position {
     }
 
 
-    public void moveInDirection(double goY) {
+    public void moveDown(double goY) {
         double moveY = Math.abs(goY - y);
 
         while (y < startGrid.getHeight()) {
@@ -40,7 +39,7 @@ public class Position {
             rectangle.translate(0, 10);
         }
 
-    }
 
+    }
 
 }

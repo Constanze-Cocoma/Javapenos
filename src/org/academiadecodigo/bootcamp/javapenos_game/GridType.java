@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.javapenos_game.grid;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 /**
  * The available types of grids

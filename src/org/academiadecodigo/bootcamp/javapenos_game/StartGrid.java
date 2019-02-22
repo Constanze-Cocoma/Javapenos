@@ -1,6 +1,5 @@
-package org.academiadecodigo.bootcamp.javapenos_game.grid;
+package src.org.academiadecodigo.bootcamp.javapenos_game;
 
-import org.academiadecodigo.bootcamp.javapenos_game.Position;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
@@ -52,11 +51,11 @@ public class StartGrid implements Grid {
      * @return the new grid position
      */
      //public GridPosition makeGridPosition(int col, int row);
-
+/*
     public Position makeGridPosition(int x, int y) {
         return //retornar uma grip position com (x, y, this grid)
     }
-
+*/
 
      public int getWidth() {
           return width;
