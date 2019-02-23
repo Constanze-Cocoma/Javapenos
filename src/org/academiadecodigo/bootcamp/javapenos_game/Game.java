@@ -5,19 +5,17 @@ public class Game {
     private Grid startGrid;
     private Grid playGrid;
     private Grid endGrid;
-    private Counter counter;
+    //private Counter counter;
     private Javapeno[] javapenos;
     private int delay;
     private int numberJavapenos;
-    private int points; //check for collisions (red or green): green +1/ red -1;
-    // counter: show counter in playGrid (real time) or show final points on endGrid
-    // print result to screen with TEXT (simplegfx)
-    // maybe create new class "counter"
+    private int totalPoints; //check for collisions (red or green): green +1/ red -1;
+
 
     public Game(int numberJavapenos) {
         delay = 50; //whatever that means :)
         this.numberJavapenos = numberJavapenos; //choose no javapenos for each game(?)
-        counter = new Counter(numberJavapenos);
+        //counter = new Counter(numberJavapenos);
         startGrid.init();
     }
 
@@ -37,7 +35,7 @@ public class Game {
 
     public void moveJavapenos() {
         for (Javapeno j: javapenos) {
-            //j.move(); //missing method in abstract class javapeno
+            j.move(); //missing method in abstract class javapeno
         }
     }
 
