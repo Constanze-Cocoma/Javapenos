@@ -15,7 +15,7 @@ public class GreenJavapeno extends Javapeno {
     int num = Randomizer.chooseNumber(60, 560);
 
 
-    public GreenJavapeno() {
+    public GreenJavapeno()  {
         this.picture = new Picture(num, 0, "resources/javapeños-green2_58x58.png");
         picture.draw();
         move();

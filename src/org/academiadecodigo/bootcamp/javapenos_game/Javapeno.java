@@ -10,14 +10,13 @@ abstract public class Javapeno {
     
     //acrescentar método move 
     private int speed;
+    private Picture picture;
 
 
     public void setSpeed(int speed) {
         this.speed = speed;
     }
 
-    public void move() {
-
-    }
+   public abstract void move();
 
 }
