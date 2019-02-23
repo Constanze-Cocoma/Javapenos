@@ -1,9 +1,15 @@
 package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 
-public class Main {
-  public static void main(String[] args) {
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-    
-  }
+import javax.swing.plaf.TableHeaderUI;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+
+    }
 }

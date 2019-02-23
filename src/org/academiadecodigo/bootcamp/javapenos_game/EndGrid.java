@@ -1,4 +1,4 @@
 package src.org.academiadecodigo.bootcamp.javapenos_game;
 
-public class EndGrid implements Grid {
+public class EndGrid{ //implements Grid {
 }

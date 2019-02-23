@@ -9,7 +9,11 @@ public class GridFactory {
      * @param width      the width in pixels
      * @param height     the height in pixels
      * @return the new grid
+
      */
+
+
+    /*
     public static StartGrid makeGrid(GridType gridType, int width, int height) {
 
         switch (gridType) {
@@ -25,5 +29,5 @@ public class GridFactory {
         return null; // check return
 
     }
-
+*/
 }
