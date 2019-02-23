@@ -1,40 +1,30 @@
 package src.org.academiadecodigo.bootcamp.javapenos_game;
 
-public interface Grid {
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
-    /**
-     * Initializes the grid
-     */
-    public void init();
+public abstract class Grid {
 
-    /**
-     * Gets the width in pixels of the grid
-     *
-     * @return width in pixels
-     */
-    public int getWidth();
+    public static final int PADDING = 10;
+    public static final int FX_PADDING = 100;
 
-    /**
-     * Gets the height in pixels of the grid
-     *
-     * @return height in pixels
-     */
-    public int getHeight();
+    private int width; // mudar para static final quando soubermos as medidas
+    private int height;
 
-    /**
-     * Create a random grid position
-     *
-     * @return the new grid position
-     */
-    //public GridPosition makeGridPosition();
 
-    /**
-     * Creates a a grid position in a specific x and y
-     *
-     * @param x   the position in x axis
-     * @param y   the position in y axis
-     * @return the new grid position
-     */
-    //public GridPosition makeGridPosition(int x, int y);
+
+    public Grid(int PADDING, int width, int height) {
+        this.width = width;
+        this.height = height;
+        Rectangle canvas = new Rectangle(PADDING, PADDING, width, height);
+        canvas.draw();
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
 }
