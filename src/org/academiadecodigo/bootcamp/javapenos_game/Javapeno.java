@@ -7,16 +7,24 @@ abstract public class Javapeno {
 
     //private FieldPosition pos;
     //private Field field;
-    
+
     //acrescentar método move 
     private int speed;
     private Picture picture;
+    private Position position;
+    private double x; // posição do javapeno eixo x
+    private double y; // posição do javapeno eixo y
+    private int num = Randomizer.chooseNumber(60, 560);
 
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public double getX() {
+        return x;
     }
 
-   public abstract void move();
+    public double getY() {
+        return y;
+    }
+
+    public abstract void move();
 
 }

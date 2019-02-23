@@ -4,42 +4,43 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Position {
 
-    private Rectangle rectangle;
-    private StartGrid startGrid;
-    private static final double JAVASIZE = 10;
-    private double x;
-    private double y;
+    // tirei a grid porque achei que nao fazia falta
+    private double x; // pixel
+    private double y; // pixel
 
 
-    public Position(double x, double y, StartGrid startGrid) {
-        this.startGrid = startGrid;
+    public Position(double x, double y) {
         this.x = x;
         this.y = y;
-        this.rectangle = new Rectangle(x, y, 60, 80);
-        show();
     }
 
 
-    public void show() {
-        rectangle.fill();
+    public double getX() {
+        return x;
     }
 
-
-    public void hide() {
-
-        rectangle.delete();
+    public double getY() {
+        return y;
     }
 
+    public void setX(double x) {
+        this.x = x;
+    }
 
+    public void setY(double y) {
+        this.y = y;
+    }
+
+/*
     public void moveDown(double goY) {
         double moveY = Math.abs(goY - y);
 
-        while (y < startGrid.getHeight()) {
+        while (y < gameGrid.getHeight()) {
 
             rectangle.translate(0, 10);
         }
 
-
     }
+    */
 
 }
