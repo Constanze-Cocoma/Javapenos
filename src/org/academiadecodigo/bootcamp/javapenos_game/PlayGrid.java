@@ -1,6 +1,6 @@
 package src.org.academiadecodigo.bootcamp.javapenos_game;
 
-public class PlayGrid implements Grid {
+public class PlayGrid{ //implements Grid {
 
 
 

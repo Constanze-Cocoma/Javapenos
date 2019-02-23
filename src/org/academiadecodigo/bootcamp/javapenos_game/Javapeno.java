@@ -1,6 +1,8 @@
 package src.org.academiadecodigo.bootcamp.javapenos_game;
 
 
+import org.academiadecodigo.simplegraphics.pictures.Picture;
+
 abstract public class Javapeno {
 
     //private FieldPosition pos;
@@ -12,6 +14,10 @@ abstract public class Javapeno {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public void move() {
+
     }
 
 }
