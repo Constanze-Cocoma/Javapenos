@@ -5,6 +5,7 @@ public class Game {
     private Grid startGrid;
     private Grid playGrid;
     private Grid endGrid;
+    private Counter counter;
     private Javapeno[] javapenos;
     private int delay;
     private int numberJavapenos;
@@ -16,6 +17,7 @@ public class Game {
     public Game(int numberJavapenos) {
         delay = 50; //whatever that means :)
         this.numberJavapenos = numberJavapenos; //choose no javapenos for each game(?)
+        counter = new Counter(numberJavapenos);
         startGrid.init();
     }
 
