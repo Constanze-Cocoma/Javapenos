@@ -5,16 +5,13 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 abstract public class Javapeno {
 
-    //private FieldPosition pos;
-    //private Field field;
-
-    //acrescentar método move 
-    private int speed;
+    private double speed;
     private Picture picture;
     private Position position;
+    private GameGrid gameGrid;
     private double x; // posição do javapeno eixo x
     private double y; // posição do javapeno eixo y
-    private int num = Randomizer.chooseNumber(60, 560);
+    private double num = Randomizer.chooseNumber(60, 560);
 
 
     public double getX() {

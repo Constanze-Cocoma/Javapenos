@@ -7,19 +7,20 @@ import java.awt.*;
 
 public class GreenJavapeno extends Javapeno {
 
-    private int speed; // quantos pixeis o javapeno "desce" em cada translate
+    private double speed; // quantos pixeis o javapeno "desce" em cada translate
     private Picture picture;
     private Position position;
     private double x; // posição do javapeno eixo x
     private double y; // posição do javapeno eixo y
-    private int num = Randomizer.chooseNumber(60, 500);
+    private double num = Randomizer.chooseNumber(60, 500);
+    private GameGrid gameGrid;
 
 
 
 
     public GreenJavapeno()  {
-        this.picture = new Picture(num, Grid.PADDING * 4, "resources/javapeños-green2_58x58.png");
-        this.position = new Position(num, Grid.PADDING * 4);
+        this.picture = new Picture(num, Grid.PADDING * 6, "resources/javapeños-green2_58x58.png");
+        this.position = new Position(num, Grid.PADDING * 6);
         this.speed = 20;
         picture.draw();
     }
@@ -28,7 +29,7 @@ public class GreenJavapeno extends Javapeno {
 
     @Override
     public void move() {
-        while (position.getY() != 620 /* acrescentar condição quando o colision detector deteta uma colisão */) {
+        while (position.getY() != gameGrid.getHeight() /* acrescentar condição quando o colision detector deteta uma colisão */) {
             picture.translate(0, speed);
             position.setY(position.getY() + speed); // atualiza a posição do javapeno
 

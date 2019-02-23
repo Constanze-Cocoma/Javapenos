@@ -4,14 +4,20 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Position {
 
-    // tirei a grid porque achei que nao fazia falta
+    private GameGrid gameGrid;
     private double x; // pixel
     private double y; // pixel
 
 
-    public Position(double x, double y) {
+    public Position(double x, double y, GameGrid gameGrid) {
         this.x = x;
         this.y = y;
+        this.gameGrid = gameGrid;
+    }
+
+    public  Position (double x, double y) {
+        this.x= x;
+        this.y= y;
     }
 
 
