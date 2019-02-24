@@ -5,20 +5,21 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 abstract public class Javapeno {
 
-    private double speed;
+    private int speed;
     private Picture picture;
     private Position position;
     private GameGrid gameGrid;
-    private double x; // posição do javapeno eixo x
-    private double y; // posição do javapeno eixo y
-    private double num = Randomizer.chooseNumber(60, 560);
+    public static final int CELL_SIZE = 58;
+    private int x; // posição do javapeno eixo x
+    private int y; // posição do javapeno eixo y
+    private int num = Randomizer.chooseNumber(60, 560);
 
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 

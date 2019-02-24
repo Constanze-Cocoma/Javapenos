@@ -7,12 +7,12 @@ import java.awt.*;
 
 public class GreenJavapeno extends Javapeno {
 
-    private double speed; // quantos pixeis o javapeno "desce" em cada translate
+    private int speed; // quantos pixeis o javapeno "desce" em cada translate
     private Picture picture;
     private Position position;
-    private double x; // posição do javapeno eixo x
-    private double y; // posição do javapeno eixo y
-    private double num = Randomizer.chooseNumber(60, 500);
+    private int x; // posição do javapeno eixo x
+    private int y; // posição do javapeno eixo y
+    private int num = Randomizer.chooseNumber(60, 500);
     private GameGrid gameGrid;
 
 

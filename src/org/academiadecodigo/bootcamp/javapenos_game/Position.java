@@ -5,35 +5,35 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 public class Position {
 
     private GameGrid gameGrid;
-    private double x; // pixel
-    private double y; // pixel
+    private int x; // pixel
+    private int y; // pixel
 
 
-    public Position(double x, double y, GameGrid gameGrid) {
+    public Position(int x, int y, GameGrid gameGrid) {
         this.x = x;
         this.y = y;
         this.gameGrid = gameGrid;
     }
 
-    public  Position (double x, double y) {
+    public  Position (int x, int y) {
         this.x= x;
         this.y= y;
     }
 
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 
-    public void setX(double x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public void setY(double y) {
+    public void setY(int y) {
         this.y = y;
     }
 
