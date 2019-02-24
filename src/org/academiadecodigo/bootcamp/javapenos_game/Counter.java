@@ -12,24 +12,29 @@ public class Counter {
     }
 
 
-
-
     public int getPoints() {
         return totalPoints;
     }
 
-    public void setPoints(int points) {
-        totalPoints = totalPoints + points;
+    public void addPoint() {
+        totalPoints = totalPoints + 1;
+    }
+
+    public void subtractPoint() {
+        totalPoints = totalPoints - 1;
     }
 
     public int getJavapenosLeft() {
         return javapenosLeft;
     }
 
-    public void setJavapenosLeft(int javapenosGone) {
-        javapenosLeft = javapenosLeft - javapenosGone;
+    public void subtractJavapenosLeft() {
+        javapenosLeft = javapenosLeft - 1;
     }
 
 
 
 }
+
+
+
